@@ -3,83 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="styeel.css">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Muhammad Farhan</h1>
-            <p class="contact-info">
-                <span>📍 Malir,karachi Pakistan</span> |
-                <span>✉️ farhansmit0318@gmail.com</span> |
-                <span>📞 +92 318-212-7256</span>
-            </p>
+            <h1>Dynamic Resume Builder</h1>
         </header>
-        
-        <section class="summary">
-            <h2>Summary</h2>
-            <p>A highly skilled and dedicated frontend developer with extensive experience in crafting user-friendly and visually appealing interfaces.</p>
-        </section>
-        <section class="employment">
-            <h2>Employment History</h2>
-            <div class="job">
-                <h3>Frontend Developer</h3>
-                <p>WebTech Solutions, Birmingham | June 2018 - Current</p>
-                <ul>
-                    <li>Developed responsive and user-friendly web applications.</li>
-                    <li>Collaborated with designers to implement visually appealing interfaces.</li>
-                </ul>
-            </div>
-            <div class="job">
-                <h3>Junior Frontend Developer</h3>
-                <p>CodeCraft, Birmingham | January 2017 - May 2018</p>
-                <ul>
-                    <li>Assisted in the development of web applications using HTML, CSS, and JavaScript.</li>
-                    <li>Participated in code reviews to ensure high-quality code.</li>
-                </ul>
-            </div>
-        </section>
-        <section class="education">
-            <h2>Education</h2>
-            <div class="degree">
-                <h3>BSc Computer Science (2:1)</h3>
-                <p>University of Birmingham | September 2014 - May 2016</p>
-            </div>
-        </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>XHTML</li>
-                <li>JavaScript</li>
-                <li>CSS</li>
-                <li>Visual Basic</li>
-            </ul>
-        </section>
+        <form id="resumeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
 
-        <section class="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Web Design</li>
-                <li>Shopping</li>
-                <li>Traveling</li>
-            </ul>
-        </section>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
 
-        <section class="languages">
-            <h2>Languages</h2>
-            <ul>
-                <li>English</li>
-                <li>French</li>
-                <li>Spanish</li>
-            </ul>
-        </section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
 
-        <section class="honors">
-            <h2>Awards and Recognition</h2>
-            <p>Recipient of the CodeCraft Award for Outstanding Frontend Development | 2018</p>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="summary">Professional Summary:</label>
+            <textarea id="summary" required></textarea>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <section id="resume" class="resume hidden">
+            <h2>Resume</h2>
+            <h3 id="resumeName"></h3>
+            <p id="resumeAddress"></p>
+            <p id="resumeEmail"></p>
+            <p id="resumePhone"></p>
+            <h4>Professional Summary</h4>
+            <p id="resumeSummary"></p>
         </section>
     </div>
+
+    <script src="app.ts"></script>
 </body>
 </html>
