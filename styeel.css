@@ -25,48 +25,48 @@ h1 {
     color: #007BFF;
 }
 
-form {
-    margin-bottom: 20px;
+.contact-info {
+    font-size: 1.1em;
+    color: #555;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.resume {
-    margin-top: 20px;
-}
-
-.hidden {
-    display: none;
+.contact-info span {
+    margin-right: 15px;
 }
 
 h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
+    margin-top: 20px;
     color: #007BFF;
 }
 
-h3 {
-    margin: 0;
+.job, .degree {
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+    padding-left: 1em;
+    position: relative;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007BFF;
+}
+
+.honors {
+    margin-top: 20px;
 }
